@@ -8,8 +8,6 @@ var middleware = require('./middleware');
 // 	res.send('Hello Express!');
 // });
 
-
-
 app.use(middleware.logger);
 
 app.get('/about',middleware.requireAuthetication,function(req,res){
