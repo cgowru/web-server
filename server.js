@@ -4,9 +4,9 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 var middleware = require('./middleware');
 
-// app.get('/',function(req,res){
-// 	res.send('Hello Express!');
-// });
+app.get('/',function(req,res){
+	res.send('Hello Express!');
+});
 
 app.use(middleware.logger);
 
