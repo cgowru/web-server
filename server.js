@@ -8,7 +8,7 @@ app.get('/',function(req,res){
 	res.send('Hello Express!');
 });
 
-app.use(middleware.logger);
+app.use(middleware.logger); // added logger comment
 
 app.get('/about',middleware.requireAuthetication,function(req,res){
 	res.send('About Us!');
