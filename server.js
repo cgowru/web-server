@@ -1,6 +1,6 @@
 var express = require('express');
 
-var app = express();
+var app = express(); // added serve comment
 var PORT = process.env.PORT || 3100;
 var middleware = require('./middleware');
 
