@@ -1,7 +1,7 @@
 var express = require('express');
 
-var app = express();
-var PORT = process.env.PORT || 3100;
+var app = express(); // added serve comment
+var PORT = process.env.PORT || 3100; // added port comment
 var middleware = require('./middleware');
 
 app.get('/',function(req,res){
