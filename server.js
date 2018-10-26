@@ -4,7 +4,7 @@ var app = express(); // added serve comment
 var PORT = process.env.PORT || 3100; // added port comment
 var middleware = require('./middleware');
 
-app.get('/',function(req,res){
+app.get('/',function(req,res){ // Added route comment
 	res.send('Hello Express!');
 });
 
