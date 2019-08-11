@@ -6,8 +6,6 @@ var middleware = require('./middleware');
 
 app.get('/',function(req,res){
 	res.send('Hello Express!');
-// Change 1
-
 });
 
 app.use(middleware.logger); // added logger comment
