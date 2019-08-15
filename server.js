@@ -11,6 +11,7 @@ app.get('/',function(req,res){
 
 app.use(middleware.logger); // added logger comment
 
+// hello
 app.get('/about',middleware.requireAuthetication,function(req,res){
 	res.send('About Us!');
 });
